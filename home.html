@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="main-container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./assets/styles/homeStyle.css">
+</head>
+<body>
+    <head>
+        <div class="mobile-nav">
+            <div class="moblile-menu-icon">
+                <!-- <a id="mobile-icon-btn" href="#"> <img src="./assets/images/mobile_menu.png" alt="menu hamburger icon"></a> -->
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#portfoliostart" onclick="closeNav()">About</a>
+                    <a href="#about-social" onclick="closeNav()">Program</a>
+                    <a href="#contact" onclick="closeNav()">Join</a>
+                    <a href="#News" onclick="closeNav()">News</a>
+                    <a href="#contact" onclick="closeNav()">CC Campaign</a>
+                </div>
+            </div>
+            <div class="desk-nav">
+                <div class="logo-png">
+                    <a href=""> <img src="./assets/images/logopng.png" alt="logo image"> </a>
+                </div>
+                <div class="desk-nav-items">
+                    <ul>
+                        <li class="menu-item">About</li>
+                        <li class="menu-item">Progam</li>
+                        <li class="menu-item">Join</li>
+                        <li class="menu-item">Sponsor</li>
+                        <li class="menu-item">News</li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="flex-nav"><button onclick="openNav()">☰</button></nav>
+        </div>
+    </head>
+    <!-- coding the hero section here -->
+        <section class="hero-section">
+            <img id="main-img" src="./assets/images/main-image.png" alt="">
+            <div class="message-main">
+                <p>
+                    Experts from all around the globe, gathering to share their experiences, and to invest in your ideas, your dream is coming true, just prepare your pitch and impress one investor at least to get the fund
+                </p>
+            </div>
+            <div class="location-data">
+                <p id="date">2022.10.14 (Wed) ~ 17 (Sat)</p>
+                <p id="place">@ National Museum of Korea, Art Center Nabi, etc.</p>
+            </div>
+        </section>
+    <!-- coding the main program section here -->
+        <section class="main-program">
+            <h2>Main Program</h2>
+            <div class="program-card card1">
+                <div class="prog-icon">
+                    <img src="./assets/images/program_icon_01.png" alt="program-icon-1">
+                </div>
+                <div class="prog-title">
+                    confrence
+                </div>
+                <div class="prog-desc"> 
+                    Listen to lectures from speakers from around the world and learn about the latest trends in the world.
+                </div>
+            </div>
+                <div class="program-card card2">
+                <div class="prog-icon">
+                    <img src="./assets/images/program_icon_02.png" alt="program-icon-2">
+                </div>
+                <div class="prog-title">
+                    CC exhibition
+                </div>
+                <div class="prog-desc">
+                    Let's meet the creations of artists from various fields who share the open spirit of CC.
+                </div>
+                </div>
+            <div class="program-card card3">
+                <div class="prog-icon">
+                    <img src="./assets/images/program_icon_03.png" alt="program-icon-3">
+                </div>
+                <div class="prog-title">
+                    forum
+                </div>
+                <div class="prog-desc">
+                    We have time to share our thoughts and opinions with experts by topic.
+                </div>
+            </div>
+            <div class="program-card card4">
+                <div class="prog-icon">
+                    <img src="./assets/images/program_icon_04.png" alt="program-icon-4">
+                </div>
+                <div class="prog-title">
+                    workshop
+                </div>
+                <div class="prog-desc">
+                    You can create your own creations using open source instead of just looking at them.
+                </div>
+            </div>
+            <div class="program-card card5">
+                <div class="prog-icon">
+                    <img src="./assets/images/program_icon_05.png" alt="program-icon-5">
+                </div>
+                <div class="prog-title">
+                    CC party
+                </div>
+                <div class="prog-desc">
+                    Create opportunities to freely network with CC personnel from around the world.
+                </div>
+            </div>
+            <div class="prog-btn">
+            <button>Join Affiliate Marketing Summit</button>
+            </div>
+        </section>
+        <!-- speakers sections will be implemented using js onload event -->
+        <section class="speakers">
+            <h2 class="speakers-title">Featured Speakers</h2>
+
+        </section>
+        <!-- sponsors section -->
+    </div>
+    <section class="partner">
+        <h2>partner</h2>
+        <div class="partner-logo">
+            <img src="./assets/images/naver-removebg-preview.png" alt="naver logo">
+            <img src="./assets/images/ebaylogo.png" alt="ebay logo">
+            <img src="./assets/images/airbnb-removebg-preview.png" alt="airbnb">
+            <img src="./assets/images/googlekorea-removebg-preview.png" alt="google logo">
+            <img src="./assets/images/mozilla.png" alt="mozilla logo">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <img src="./assets/images/logopng.png" alt="footer logo">
+        </div>
+        <div class="footer-text">
+            <p id="copy-rights">
+                2022 Creative Commons, Some Rights Reserved
+            </p>
+            <p id="footer-p">
+                before you use this website, or any images listed in it please contact us
+            </p>
+        </div>
+    </footer>
+        <script src="./assets/script.js"></script>
+
+</body>
+</html>

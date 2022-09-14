@@ -1,0 +1,87 @@
+@media (min-width: 320px) {
+  .body {
+    margin: 0;
+  }
+
+  .main-container {
+    background-image: url(../images/main_big.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 51px 0 0;
+    margin: 0 8px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .message-main p {
+    border: 2px solid white;
+    padding: 3%;
+    font-family: 'lato', sans-serif;
+  }
+
+  .flex-nav {
+    margin: 0 16px;
+  }
+
+  #background-img {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+
+  #main-img {
+    padding: 50px;
+    margin: 20px;
+    width: 80%;
+    z-index: 20;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 1%;
+    font-size: 40px;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(158, 158, 158, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+}
