@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-plusplus */
 function openNav() {
   document.getElementById('myNav').style.display = 'block';
 }

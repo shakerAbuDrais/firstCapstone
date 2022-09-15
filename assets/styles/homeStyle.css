@@ -9,6 +9,10 @@
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .main-container {
     background-image: url(../images/main_big.png);
     background-size: cover;
@@ -144,6 +148,15 @@
     font-style: italic;
   }
 
+  .overlay a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
   .overlay a:hover,
   .overlay a:focus {
     color: #f1f1f1;
@@ -175,15 +188,6 @@
     width: 100%;
     text-align: left;
     margin-top: 30px;
-  }
-
-  .overlay a {
-    padding: 5%;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
   }
 
   .more-btn {

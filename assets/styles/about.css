@@ -3,29 +3,51 @@
     margin: 0;
   }
 
+  * {
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
   .main-container {
-    background-image: url(../images/main_big.png);
-    background-size: cover;
     margin: 0;
-    padding: 0;
+    background-color: rgba(158, 158, 158, 0.1);
   }
 
   .hero-section {
     height: auto;
-    padding: 51px 0 0;
-    margin: 0 8px;
+    margin: 0 10%;
     position: relative;
     overflow: hidden;
+    background-image: url(../images/about_bg_01.png);
+    background-size: auto;
+    background-repeat: no-repeat;
   }
 
   .message-main p {
     border: 2px solid white;
+    box-shadow: 1px 1px;
     padding: 3%;
     font-family: 'lato', sans-serif;
+    z-index: 99;
+    background-color: #fff;
+    color: #272727;
+    font-size: 22px;
+    line-height: 1.6;
   }
 
   .flex-nav {
     margin: 0 16px;
+    float: left;
   }
 
   #background-img {
@@ -41,6 +63,15 @@
     margin: 20px;
     width: 80%;
     z-index: 20;
+  }
+
+  .overlay a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
   }
 
   .overlay a:hover,
@@ -76,12 +107,208 @@
     margin-top: 30px;
   }
 
-  .overlay a {
+  .partner,
+  footer,
+  .desk-nav,
+  .desk-nav-items {
+    display: none;
+  }
+
+  .main-title {
+    -webkit-background-clip: text;
+    background-image: url(../images/dubai-business-view.jpg);
+    color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  #email-text {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .logo-sec {
     padding: 5%;
-    text-decoration: none;
-    font-size: 2rem;
+  }
+
+  .cc-logo {
+    border: 1px solid grey;
+  }
+
+  .logo-sec img {
+    width: 60%;
+    padding: 3%;
+  }
+
+  .past-cc {
+    margin: 5%;
+  }
+
+  .first-summit {
+    background-image: url(../images/worldsummit.jpeg);
+    height: 260px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 5%;
+  }
+
+  .position {
+    background-color: rgba(250, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .position h2 {
+    padding-top: 12%;
     color: #fff;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .position p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .second-summit {
+    background-image: url(../images/worksummit.jpg);
+    height: 260px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .partner {
     display: block;
-    transition: 0.3s;
+    background-color: #272a31;
+    text-align: center;
+    color: grey;
+    padding: 7%;
+  }
+
+  .partner h2 {
+    margin: 0;
+  }
+
+  .partner-logo {
+    filter: grayscale(100%);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 3% 0;
+  }
+
+  #logo-1,
+  #logo-2,
+  #logo-3 {
+    flex-basis: 25%;
+  }
+
+  .partner-logo img {
+    width: 120px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 10%;
+  }
+
+  .footer-logo img {
+    filter: grayscale(100%);
+    padding-top: 10px;
+  }
+
+  #copy-rights {
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+  }
+
+  #footer-p {
+    font-family: 'lato', sans-serif;
+    color: #272a31;
+    display: none;
+  }
+
+  .desk-nav-items {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .desk-nav {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 2px 1px -2px gray;
+  }
+
+  .desk-nav-items ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10%;
+  }
+
+  .menu-item {
+    margin-right: 60px;
+  }
+
+  .hero-section {
+    padding: 10%;
+  }
+
+  .past-cc {
+    padding: 0 13%;
+  }
+
+  .logo-sec {
+    padding: 3% 15%;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .cc-logo {
+    margin: 0 20%;
+  }
+
+  .summit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  footer {
+    background-color: #272727;
+    color: #fff;
+  }
+
+  #copy-rights {
+    font-weight: normal;
+  }
+
+  #footer-p {
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .flex-nav {
+    display: none;
+  }
+
+  .desk-nav-items {
+    display: flex;
   }
 }
