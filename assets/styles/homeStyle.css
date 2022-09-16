@@ -9,6 +9,20 @@
     margin: 0;
   }
 
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'lato', sans-serif;
+  }
+
+  .flex-nav button {
+    border: none;
+  }
+
+  .upper-menu {
+    display: none;
+  }
+
   a {
     text-decoration: none;
   }
@@ -22,8 +36,7 @@
 
   .hero-section {
     height: auto;
-    padding: 51px 0 0;
-    margin: 0 8px;
+    padding: 10px 0 0;
     position: relative;
     overflow: hidden;
   }
@@ -36,7 +49,7 @@
 
   #date {
     font-family: 'COCOGOOSE', sans-serif;
-    font-size: 24px;
+    font-size: 40px;
     margin-left: 14px;
   }
 
@@ -224,6 +237,28 @@
     background-color: white;
     z-index: 100;
     box-shadow: 0 2px 1px -2px gray;
+  }
+
+  #cc-a {
+    color: #ec5242;
+    border: 2px solid #ec5242;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: #ec5242;
+  }
+
+  .upper-menu ul {
+    display: flex;
+    background-color: #272727;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 20px;
+    color: #fff;
+    padding: 5px 22% 5px 0;
+    font-size: 16px;
+    margin: 0;
   }
 
   .desk-nav-items ul {

@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="./assets/styles/about.css">
     <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/66d872781a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main-container">
-    <head>
+        <nav class="upper-menu flex-col">
+            <ul class="upper-menu-items flex-row clr-w marg-0">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li>English</li>
+                <li>My Page</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+    <header>
         <div class="mobile-nav">
             <div class="moblile-menu-icon">
                 <!-- <a id="mobile-icon-btn" href="#"> <img src="./assets/images/mobile_menu.png" alt="menu hamburger icon"></a> -->
@@ -37,12 +47,13 @@
                         <li class="menu-item">Join</li>
                         <li class="menu-item">Sponsor</li>
                         <li class="menu-item">News</li>
+                        <li class="menu-item" id="cc-a"> CC Campaign</li>
                     </ul>
                 </div>
             </div>
-            <nav class="flex-nav"><button onclick="openNav()">☰</button></nav>
+            <nav class="flex-nav"><button onclick="openNav()"> <img src="./assets/images/mobile_menu.png" alt="moblie menu icon"></button></nav>
         </div>
-    </head>
+    </header>
     <!-- coding the hero section here -->
     <section class="hero-section">
         <h2 class="main-title">

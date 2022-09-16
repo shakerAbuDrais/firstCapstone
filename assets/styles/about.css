@@ -3,11 +3,20 @@
     margin: 0;
   }
 
+  .upper-menu {
+    display: none;
+  }
+
   * {
     font-family: 'lato', sans-serif;
     text-align: center;
-    font-size: 22px;
     line-height: 1.6;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'lato', sans-serif;
   }
 
   a {
@@ -26,7 +35,6 @@
   .hero-section {
     height: auto;
     margin: 0 10%;
-    position: relative;
     overflow: hidden;
     background-image: url(../images/about_bg_01.png);
     background-size: auto;
@@ -48,6 +56,10 @@
   .flex-nav {
     margin: 0 16px;
     float: left;
+  }
+
+  .flex-nav button {
+    border: none;
   }
 
   #background-img {
@@ -118,7 +130,7 @@
     -webkit-background-clip: text;
     background-image: url(../images/dubai-business-view.jpg);
     color: transparent;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
   }
 
@@ -249,6 +261,30 @@
     background-color: white;
     z-index: 100;
     box-shadow: 0 2px 1px -2px gray;
+  }
+
+  .upper-menu ul {
+    display: flex;
+    background-color: #272727;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 20px;
+    color: #fff;
+    padding-right: 18%;
+    font-size: 16px;
+    margin: 0;
+    height: 30px;
+  }
+
+  #cc-a {
+    color: #ec5242;
+    border: 2px solid #ec5242;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  a:visited {
+    color: #ec5242;
   }
 
   .desk-nav-items ul {

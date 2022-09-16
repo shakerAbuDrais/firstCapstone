@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./assets/styles/homeStyle.css">
+    <script src="https://kit.fontawesome.com/66d872781a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <head>
-        <div class="main-container">
-        <div class="mobile-nav">
+    <div class="main-container">
+        <nav class="upper-menu flex-col">
+            <ul class="upper-menu-items flex-row clr-w marg-0">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li>English</li>
+                <li>My Page</li>
+                <li>Logout</li>
+            </ul>
+        </nav>
+        <header>
+        <nav class="mobile-nav">
             <div class="moblile-menu-icon">
-                <!-- <a id="mobile-icon-btn" href="#"> <img src="./assets/images/mobile_menu.png" alt="menu hamburger icon"></a> -->
             </div>
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -35,12 +44,13 @@
                         <li class="menu-item">Join</li>
                         <li class="menu-item">Sponsor</li>
                         <li class="menu-item">News</li>
+                        <li class="menu-item" id="cc-a"> CC Campaign</li>
                     </ul>
                 </div>
             </div>
-            <nav class="flex-nav"><button onclick="openNav()">☰</button></nav>
-        </div>
-    </head>
+            <nav class="flex-nav"><button onclick="openNav()"> <img id="mobile-menu-icon" src="./assets/images/mobile_menu.png"> </nav>
+        </nav>
+    </header>
     <!-- coding the hero section here -->
         <section class="hero-section">
             <img id="main-img" src="./assets/images/main-image.png" alt="">
@@ -61,9 +71,9 @@
                 <div class="prog-icon">
                     <img src="./assets/images/program_icon_01.png" alt="program-icon-1">
                 </div>
-                <div class="prog-title">
+                <h3 class="prog-title">
                     confrence
-                </div>
+                </h3>
                 <div class="prog-desc"> 
                     Listen to lectures from speakers from around the world and learn about the latest trends in the world.
                 </div>

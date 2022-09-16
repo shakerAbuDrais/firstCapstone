@@ -68,6 +68,8 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+This design was originally designed by Cindy Shin
+- https://www.behance.net/adagio07
 
 ## 📝 License
 
