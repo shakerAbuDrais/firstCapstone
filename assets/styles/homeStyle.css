@@ -1,0 +1,383 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:wght@700&display=swap");
+
+@media (min-width: 320px) {
+  .body {
+    margin: 0;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'lato', sans-serif;
+  }
+
+  .flex-nav button {
+    border: none;
+  }
+
+  .upper-menu {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .main-container {
+    background-image: url(../images/main_big.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 10px 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .message-main p {
+    border: 2px solid white;
+    padding: 3%;
+    font-family: 'lato', sans-serif;
+  }
+
+  #date {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 40px;
+    margin-left: 14px;
+  }
+
+  #place {
+    margin-left: 14px;
+  }
+
+  .flex-nav {
+    margin: 0 16px;
+  }
+
+  #background-img {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+  }
+
+  #main-img {
+    padding: 50px;
+    margin: 20px;
+    width: 80%;
+    z-index: 20;
+  }
+
+  .main-program {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/pattern_bg.png);
+    background-repeat: repeat;
+    background-color: #272a31;
+  }
+
+  .main-program h2 {
+    text-align: center;
+    color: white;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
+  .program-card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .prog-icon {
+    flex: 1;
+  }
+
+  .prog-title {
+    flex: 1;
+    align-self: center;
+    color: #ec5242;
+    font-weight: bolder;
+    margin-right: 18px;
+    font-size: 1.2em;
+  }
+
+  .prog-desc {
+    flex: 3;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+
+  .sponsors {
+    margin: 0 24px;
+  }
+
+  .angel-sponsors {
+    margin-bottom: 24px;
+  }
+
+  .spons-logo img {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .spons-logo p {
+    margin: 0 10%;
+  }
+
+  .spons-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .speakers-cards {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .speakers-cards h2 {
+    margin: 4px;
+  }
+
+  .speakers-title {
+    text-align: center;
+    font-family: 'COCOGOOSE', sans-serif;
+  }
+
+  .para {
+    color: #ec5242;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .overlay a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 1%;
+    font-size: 40px;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(158, 158, 158, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .more-btn {
+    width: 90%;
+    height: 70px;
+    margin: 0 5%;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .prog-btn button {
+    background-color: #ec5242;
+    color: white;
+    width: 80%;
+    height: 70px;
+    margin: 26px 10% 40px 10%;
+    border: none;
+    font-size: 18px;
+  }
+
+  .partner,
+  footer,
+  .desk-nav,
+  .desk-nav-items {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .desk-nav {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding-top: 10px;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 2px 1px -2px gray;
+  }
+
+  #cc-a {
+    color: #ec5242;
+    border: 2px solid #ec5242;
+    font-weight: bold;
+  }
+
+  a:visited {
+    color: #ec5242;
+  }
+
+  .upper-menu ul {
+    display: flex;
+    background-color: #272727;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 20px;
+    color: #fff;
+    padding: 5px 22% 5px 0;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .desk-nav-items ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10%;
+  }
+
+  .menu-item {
+    margin-right: 60px;
+  }
+
+  .logo-png {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-nav {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 0 15%;
+  }
+
+  .main-program {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-program h2 {
+    display: block;
+    flex-basis: 100%;
+  }
+
+  .program-card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 16%;
+    flex-grow: 1;
+    margin: 0.5%;
+    max-width: 180px;
+  }
+
+  .prog-icon {
+    align-self: center;
+  }
+
+  .prog-title {
+    margin: 10px 0;
+  }
+
+  .more-btn {
+    display: none;
+  }
+
+  .speakers {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+  }
+
+  .speakers h2 {
+    flex-basis: 100%;
+  }
+
+  .speakers-cards {
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  .partner {
+    display: block;
+    background-color: #272a31;
+    text-align: center;
+    color: grey;
+    padding: 10px;
+  }
+
+  .partner h2 {
+    margin: 0;
+  }
+
+  .partner-logo {
+    filter: grayscale(100%);
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 3% 0;
+  }
+
+  .partner-logo img {
+    width: 120px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 10%;
+  }
+
+  .footer-logo img {
+    filter: grayscale(100%);
+    padding-top: 10px;
+  }
+
+  #copy-rights {
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+  }
+
+  #footer-p {
+    font-family: 'lato', sans-serif;
+    color: #272a31;
+  }
+
+  .desk-nav-items {
+    display: flex;
+  }
+}
